@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejemplo boostrap</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../../bootstrap/css/colores.css">
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<ul class="nav navbar-nav">
+				<li><a href="#"><span></span>DASHBOARD</a></li>
+				<li><a href=""><span></span>PROYECTOS</a></li>
+				<li><a href=""><span></span>TAREAS</a></li>
+				<li><a href=""><span></span>USURARIOS</a></li>
+				<li><a href=""><span></span>CALENDARIO</a></li>
+				<li><a href=""><span></span>MENSAJE</a></li>
+				<li><a href=""><span></span>ARCHIVOS</a></li>
+				<li><a href=""><span></span>NOTA</a></li>
+			</ul>
+			<ul class="nav navbar-nav pull-right">
+				<li><a href="" id="usuario"><span></span>PEDRO PEREZ P</a></li>
+				<li ><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="panel panel-default">
+			  <div class="panel-body">
+			    <h4>Subtareas</h3>
+			  </div>
+			  <div class="panel-footer">
+			  	
+			  		<div class="form-group">
+			  			<div class="row">
+					  		<div class="col-md-8">
+					  			<input id="subtarea" type="text" class="form-control" placeholder="Subtarea a realizar">
+					  		</div>
+					  		<div class="col-md-4">
+					  			<label for="categoria-tipo" class="col-sm-2 control-label">Tipo</label>
+					  			<div class="col-sm-10" id="tipo-sub">
+					  				<select class="form-control">
+						  				<option></option>
+						  			</select>
+					  			</div>
+					  			
+					  		</div>	
+				  		</div>
+			  		</div>
+			  		<div class="form-group">
+			  			<div class="row">
+			  				<div class="col-md-4">
+			  					<label for="tareas-realizar">¿Quienes realizaran estas tareas?</label>
+			  					<button id="agregar-persona">+</button>
+			  					<p class="btn">Multiple people</p>
+			  				</div>
+			  				<div class="col-md-3">
+				  				<form action="demo_form.asp">
+								  	<label for="tipo-fecha" class="control-label" id="fecha-inicio">Fecha de inicio</label>
+								 	<input type="date" name="bday">
+								</form>	
+			  				</div>
+			  				<div class="col-md-3">
+			  					<form action="demo_form.asp">
+								  	<label for="tipo-fecha" class="control-label" id="fecha-fin">Fecha final</label>
+								 	<input type="date" name="bday">
+								</form>
+			  				</div>
+			  				<div class="col-md-2">
+			  					    <label for="mail-notificacion">
+			  						<input type="checkbox" value="">
+			  						¿Notificar con email?
+			  					</label>
+			  					
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class="form-group">
+			  			<label for="">Comentarios</label>
+			  			<input type="text" class="form-control" placeholder="Detalles de la tarea">
+			  		</div>
+			  		<div class="form-group">
+			  			<label for="">Adjuntar archivos</label>
+			  			<input type="text" class="form-control" placeholder="Arrastrar o pegar archivos">
+			  		</div>
+			  		<div class="form-group">
+			  			<div class="row">
+				  			<div class="col-md-10">
+				  				<label for="">Prioridad</label>
+								<label for="">
+									<input type="radio" checked>
+									<span class="glyphicon glyphicon-exclamation-sign"></span> None
+								</label>
+								<label for="">
+									<input type="radio">
+									<span class="glyphicon glyphicon-exclamation-sign low"></span> Low
+								</label>
+								<label for="">
+									<input type="radio">
+									<span class="glyphicon glyphicon-exclamation-sign medium"></span> Medium
+								</label>
+								<label for="">
+									<input type="radio">
+									<span class="glyphicon glyphicon-exclamation-sign high"></span> High
+								</label>
+				  			</div>
+							<div class="col-md-2">
+								<label for="orden-prioridad">Orden</label>
+								<select name="" id="">
+									<option value=""></option>
+								</select>
+							</div>
+			  			</div>		
+			  		</div>
+			  		<div class="form-group">
+			  			<label for="progreso-sub">Progreso</label>
+								<select name="" id="" placeholder="0%">
+									<option value=""></option>
+								</select>
+			  		</div>
+			  		<div class="form-group">
+			  			<label for="tiempo-estimado">Tiempo estimado</label>
+			  		</div>
+			  </div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../bootstrap/js/jquery.js"></script>
+	<script type="text/javascript" src="../../bootstrap/js/bootstrap.min.js"></script>
+	</script>
+</html>
